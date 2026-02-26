@@ -13,6 +13,6 @@ app.get('/', (req, res) => {
     res.send('Hello World')
 })
 
-app.use('/ai/get-review', aiRoutes)
+app.use('/api/get-review', aiRoutes)
 
 module.exports = app
