@@ -21,6 +21,7 @@ function App() {
   }, [])
 
   async function reviewCode() {
+    console.log("CODE VALUE:", code);
     const response = await axios.post('https://ai-power-code-reviewer-bylr.onrender.com/api/get-review', { code })
     setReview(response.data)
   }
